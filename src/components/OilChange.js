@@ -133,7 +133,7 @@ const OilChange = () => {
 
                 <Form.Row>
                     <Form.Group as={Col}>
-                        <Form.Control as="textarea" rows={10} />
+                        <Form.Control as="textarea" style={{textTransform: 'uppercase'}} rows={10} />
                     </Form.Group>
                 </Form.Row>
 
