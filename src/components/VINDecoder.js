@@ -5,7 +5,7 @@ import { Form, Col, InputGroup, FormControl, Button, Table } from 'react-bootstr
 // 2C3CCAET4CH256062
 
 const VINDecoder = () => {
-    const [VIN, setVIN] = useState('2C3CCAET4CH256062');
+    const [VIN, setVIN] = useState('');
     const [data, setData] = useState([]);
     const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -29,7 +29,7 @@ const VINDecoder = () => {
 
     const VIN_table = () => {
         return (
-            <Table bordered>
+            <Table size="sm" bordered striped>
                 <thead>
                     <tr>
                         <th colSpan="2" style={{ textAlign: 'center' }}>{data.SearchCriteria}</th>
