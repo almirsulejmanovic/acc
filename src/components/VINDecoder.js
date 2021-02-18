@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { Form, Col, InputGroup, FormControl, Button, Table } from 'react-bootstrap';
 
-// 2C3CCAET4CH256062
-
 const VINDecoder = () => {
     const [VIN, setVIN] = useState('');
     const [data, setData] = useState([]);
@@ -32,7 +30,7 @@ const VINDecoder = () => {
             <Table size="sm" bordered striped>
                 <thead>
                     <tr>
-                        <th colSpan="2" style={{ textAlign: 'center' }}>{data.SearchCriteria}</th>
+                        <th colSpan="2" style={{ textAlign: 'center', textTransform: 'uppercase' }}>{data.SearchCriteria}</th>
                     </tr>
                 </thead>
                 <tbody>
