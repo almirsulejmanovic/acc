@@ -27,22 +27,22 @@ const Battery = () => {
             <Form>
                 <Form.Row>
                     <Form.Group as={Col}>
-                        <Form.Control type="number" placeholder="Mileage" />
+                        <Form.Control size="sm" type="number" placeholder="Mileage" />
                     </Form.Group>
                 </Form.Row>
 
                 <Form.Row>
                     <Form.Group as={Col}>
-                        <Form.Control type="number" placeholder="Front PSI" />
+                        <Form.Control size="sm" type="number" placeholder="Front PSI" />
                     </Form.Group>
                     <Form.Group as={Col}>
-                        <Form.Control type="number" placeholder="Rear PSI" />
+                        <Form.Control size="sm" type="number" placeholder="Rear PSI" />
                     </Form.Group>
                 </Form.Row>
 
                 <Form.Row>
                     <Form.Group as={Col}>
-                        <Form.Control as="select">
+                        <Form.Control size="sm" as="select">
                             <option>Year</option>
                             <option>2021</option>
                             <option>2020</option>
@@ -84,29 +84,29 @@ const Battery = () => {
                         </Form.Control>
                     </Form.Group>
                     <Form.Group as={Col}>
-                        <Form.Control type="number" placeholder="Engine Size" />
+                        <Form.Control size="sm" type="number" placeholder="Engine Size" />
                     </Form.Group>
                 </Form.Row>
 
                 <Form.Row>
                     <Form.Group as={Col}>
-                        <Form.Control type="number" placeholder="UPC" />
+                        <Form.Control size="sm" type="number" placeholder="UPC" />
                     </Form.Group>
                 </Form.Row>
 
                 <Form.Row>
                     <Form.Group as={Col}>
-                        <Form.Control type="text" placeholder="Serial Number" style={{textTransform: 'uppercase'}}/>
+                        <Form.Control size="sm" type="text" placeholder="Serial Number" style={{textTransform: 'uppercase'}}/>
                     </Form.Group>
                 </Form.Row>
 
                 <Form.Row>
                     <Form.Group as={Col}>
-                        <Form.Control as="textarea" placeholder="Comments" style={{textTransform: 'uppercase'}} rows={10} />
+                        <Form.Control size="sm" as="textarea" placeholder="Comments" style={{textTransform: 'uppercase'}} rows={8} />
                     </Form.Group>
                 </Form.Row>
 
-                <Button variant="primary" type="submit" onClick={handleSubmit}>
+                <Button size="sm" variant="primary" type="submit" onClick={handleSubmit}>
                     Submit
                 </Button>
             </Form>

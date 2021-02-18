@@ -13,10 +13,10 @@ const VINDecoder = () => {
                 <Form.Row>
                     <Form.Group as={Col}>
                         <InputGroup>
-                            <FormControl placeholder="VIN Number" value={VIN} style={{textTransform: 'uppercase'}} 
+                            <FormControl size="sm" placeholder="VIN Number" value={VIN} style={{textTransform: 'uppercase'}} 
                                 onChange={(e) => setVIN(e.target.value)} required/>
                             <InputGroup.Append>
-                                <Button onClick={handleVINSubmit}>Submit</Button>
+                                <Button size="sm" onClick={handleVINSubmit}>Submit</Button>
                             </InputGroup.Append>
                         </InputGroup>
                     </Form.Group>

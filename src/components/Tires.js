@@ -27,38 +27,38 @@ const Tires = () => {
             <Form>
                 <Form.Row>
                     <Form.Group as={Col}>
-                        <Form.Control type="number" placeholder="Mileage" />
+                        <Form.Control size="sm" type="number" placeholder="Mileage" />
                     </Form.Group>
                 </Form.Row>
 
                 <Form.Row>
                     <Form.Group as={Col}>
-                        <Form.Control type="number" placeholder="Front PSI" />
+                        <Form.Control size="sm" type="number" placeholder="Front PSI" />
                     </Form.Group>
                     <Form.Group as={Col}>
-                        <Form.Control type="number" placeholder="Rear PSI" />
+                        <Form.Control size="sm" type="number" placeholder="Rear PSI" />
                     </Form.Group>
                 </Form.Row>
 
                 <Form.Row>
                     <Form.Group as={Col}>
-                        <Form.Control type="number" placeholder="Tire Size" />
+                        <Form.Control size="sm" type="number" placeholder="Tire Size" />
                     </Form.Group>
                 </Form.Row>
 
                 <Form.Row>
                     <Form.Group as={Col}>
-                        <Form.Control as="textarea" placeholder="DOT" style={{textTransform: 'uppercase'}} rows={4} />
+                        <Form.Control size="sm" as="textarea" placeholder="DOT" style={{textTransform: 'uppercase'}} rows={4} />
                     </Form.Group>
                 </Form.Row>
 
                 <Form.Row>
                     <Form.Group as={Col}>
-                        <Form.Control as="textarea" placeholder="Comments" style={{textTransform: 'uppercase'}} rows={10} />
+                        <Form.Control size="sm" as="textarea" placeholder="Comments" style={{textTransform: 'uppercase'}} rows={8} />
                     </Form.Group>
                 </Form.Row>
 
-                <Button variant="primary" type="submit" onClick={handleSubmit}>
+                <Button size="sm" variant="primary" type="submit" onClick={handleSubmit}>
                     Submit
                 </Button>
             </Form>

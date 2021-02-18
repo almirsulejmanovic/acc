@@ -14,7 +14,7 @@ const App = () => {
     return (
       <VehicleContextProvider>
         <BrowserRouter>
-          <Route exact path='/' component={Home} />
+          <Route path='/acc-gh-pages' component={Home} />
           <Route path='/oilchange' component={OilChange} />
           <Route path='/tires' component={Tires} />
           <Route path='/battery' component={Battery} />
