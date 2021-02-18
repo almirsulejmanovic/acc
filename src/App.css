@@ -37,11 +37,27 @@
   }
   
   .empty {
+    margin: 10px;
+    position: absolute;
+    border: 1px solid black;
+    width: calc(100% - 20px);
+    height: calc(100% - 80px);
+  }
+
+  .empty p {
     margin: 0;
+    font-weight: bold;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .empty-button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
   }
   
   ul {

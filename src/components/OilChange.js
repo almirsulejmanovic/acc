@@ -2,13 +2,19 @@ import React, { useContext, useEffect, useState } from 'react';
 import { VehicleContext } from '../contexts/VehicleContext';
 import { useHistory  } from 'react-router-dom';
 import moment from 'moment';
-import { Form, Col, Button } from 'react-bootstrap';
+import { Form, Col, Button, Modal } from 'react-bootstrap';
+import VINDecoder from './VINDecoder'
 
 const OilChange = () => {
     let history = useHistory();
     const { dispatch } = useContext(VehicleContext);
     const [service] = useState('Oil Change');
     const [timeStarted, setTimeStarted] = useState(Date());
+
+    const [showModal, setShowModal] = useState(false);
+    const handleCloseModal = () => setShowModal(false);
+    const handleShowModal = () => setShowModal(true);
+  
 
     useEffect(() => {
         setTimeStarted(Date());
@@ -19,7 +25,7 @@ const OilChange = () => {
         var timeFinished = Date();
         var totalTime = moment.utc(moment(timeFinished).diff(moment(timeStarted))).format("HH:mm:ss");
         dispatch({ type: 'ADD_VEHICLE', vehicle: { service, timeStarted, timeFinished, totalTime } });
-        history.push('/');
+        history.push('/acc-gh-pages');
     }
 
     return (
@@ -123,10 +129,35 @@ const OilChange = () => {
                     </Form.Group>
                 </Form.Row>
 
-                <Button size="sm" variant="primary" type="submit" onClick={handleSubmit}>
-                    Submit
-                </Button>
+                <Form.Row>
+                    <Form.Group as={Col}>
+                        <Button size="sm" variant="primary" type="submit" onClick={handleSubmit}>
+                            Submit
+                        </Button> {' '}
+                        <Button size="sm" variant="secondary" onClick={handleShowModal}>
+                            VIN Decoder
+                        </Button>
+                    </Form.Group>
+                </Form.Row>
             </Form>
+
+            <Modal show={showModal} onHide={handleCloseModal}>
+                <Modal.Header closeButton>
+                    <Modal.Title>
+                        VIN Decoder
+                    </Modal.Title>
+                </Modal.Header>
+
+                <Modal.Body>
+                    <VINDecoder />
+                </Modal.Body>
+            
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={handleCloseModal}>
+                        Close
+                    </Button>
+                </Modal.Footer>
+            </Modal>
         </div>
     );
 }

@@ -7,8 +7,8 @@ import Home from './components/Home';
 import OilChange from './components/OilChange';
 import Tires from './components/Tires';
 import Battery from './components/Battery';
-import VehicleList from './components/VehicleList';
 import VINDecoder from './components/VINDecoder';
+import VehicleList from './components/VehicleList';
 
 const App = () => {
     return (

@@ -19,7 +19,7 @@ const Tires = () => {
         var timeFinished = Date();
         var totalTime = moment.utc(moment(timeFinished).diff(moment(timeStarted))).format("HH:mm:ss");
         dispatch({ type: 'ADD_VEHICLE', vehicle: { service, timeStarted, timeFinished, totalTime } });
-        history.push('/');
+        history.push('/acc-gh-pages');
     }
 
     return (
