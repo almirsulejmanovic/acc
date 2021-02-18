@@ -4,10 +4,10 @@ import { useHistory  } from 'react-router-dom';
 import moment from 'moment';
 import { Form, Col, Button } from 'react-bootstrap';
 
-const OilChange = () => {
+const Battery = () => {
     let history = useHistory();
     const { dispatch } = useContext(VehicleContext);
-    const [service] = useState('Oil Change');
+    const [service] = useState('Battery');
     const [timeStarted, setTimeStarted] = useState(Date());
 
     useEffect(() => {
@@ -37,19 +37,6 @@ const OilChange = () => {
                     </Form.Group>
                     <Form.Group as={Col}>
                         <Form.Control type="number" placeholder="Rear PSI" />
-                    </Form.Group>
-                </Form.Row>
-
-                <Form.Row>
-                    <Form.Group as={Col}>
-                        <Form.Control as="select">
-                            <option>Pre-service</option>
-                            <option>NO OIL</option>
-                            <option>1 QT LOW</option>
-                            <option>1/2 QT LOW</option>
-                            <option>FULL</option>
-                            <option>OVER</option>
-                        </Form.Control>
                     </Form.Group>
                 </Form.Row>
 
@@ -103,17 +90,13 @@ const OilChange = () => {
 
                 <Form.Row>
                     <Form.Group as={Col}>
-                        <Form.Control as="select">
-                            <option>Oil Viscosity</option>
-                            <option>0W-20</option>
-                            <option>5W-20</option>
-                            <option>5W-30</option>
-                            <option>10W-30</option>
-                            <option>15W-40</option>
-                        </Form.Control>
+                        <Form.Control type="number" placeholder="UPC" />
                     </Form.Group>
+                </Form.Row>
+
+                <Form.Row>
                     <Form.Group as={Col}>
-                        <Form.Control type="number" placeholder="Oil Capacity" />
+                        <Form.Control type="text" placeholder="Serial Number" style={{textTransform: 'uppercase'}}/>
                     </Form.Group>
                 </Form.Row>
 
@@ -131,4 +114,4 @@ const OilChange = () => {
     );
 }
 
-export default OilChange;
+export default Battery;
