@@ -6,6 +6,12 @@
     width: 250px;
     margin: 10px;
   }
+
+  .home-fa-icons {
+    position: absolute;
+    left: 25px;
+  }
+
   
   .home-container {
     margin: 0;
