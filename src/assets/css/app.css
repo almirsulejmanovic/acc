@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* APP START */
+body {
+  margin: 0;
+  overscroll-behavior: none;
+  font-family: 'Roboto';
+  background-color: #FAFAFA;
+}
+
+::placeholder {
+  text-transform: none;
+}
+
+.btn:focus,
+.btn:active {
+  border: none !important;
+  box-shadow: none !important;
+}
+/* APP END */
+
+
+/* NAVIGATION BAR START */
+.navbar {
+  width: 100%;
+  height: 55px;
+  background-color: #3F51B5;
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+}
+
+.nav-btn {
+  background-color: #3F51B5;
+  border: 0;
+  color: white;
+}
+
+.nav-btn:disabled {
+  color: rgba(0, 0, 0, 0.26);
+  background-color: transparent;
+}
+
+.acc-text {
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+  vertical-align: middle;
+}
+/* NAVIGATION BAR END */
+
+
+/* SERVICE SCREEN START */
+.service {
+  margin-top: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.form-control:focus {
+  border-color: #3F51B5;
+  box-shadow: none;
+}
+
+.form-select:focus {
+  border-color: #3F51B5;
+  box-shadow: none;
+}
+
+.submit-btn {
+  background-color: #3F51B5;
+  color: white;
+  border: none;
+  width: auto;
+  height: 35px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+  font-family: 'Roboto';
+  padding-top: 5px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 1.75;
+  letter-spacing: 0.02857em;
+}
+
+.submit-btn:disabled {
+  color: rgba(0, 0, 0, 0.26);
+  background-color: rgba(0, 0, 0, 0.12);
+  box-shadow: none;
+}
+/* SERVICE SCREEN END */
+
+
+/* HOME SCREEN START */
+.home {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.home-btn {
+  background-color: #3F51B5;
+  color: white;
+  border: none;
+  width: 250px;
+  height: 35px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+  font-family: 'Roboto';
+  padding-top: 5px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 1.75;
+  letter-spacing: 0.02857em;
+}
+
+.home-btn-icon {
+  position: absolute;
+  font-size: 20px;
+  left: 30px;
+  margin-top: -6px;
+}
+/* HOME SCREEN END */
+
+
+/* SERVICES TABLE START */
+.vehicles-list {
+  margin-top: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  max-width: 800px;
+  padding: 20px;
+  position: initial;
+}
+
+.vehicles-table {
+  margin-bottom: 20px;
+}
+
+.vehicles-table th {
+  width: 50%;
+}
+
+.vehicles-table td {
+  width: 50%;
+  text-align: right;
+}
+
+.no-vehicles {
+  margin: 10px;
+  margin-top: 75px;
+  position: fixed;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+}
+
+.no-vehicles p {
+  margin: 0;
+  font-weight: bold;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.vehicles-list ul {
+  padding: 0;
+  margin: 0;
+}
+
+.table > :not(:first-child) {
+  border-top: none;
+  border-color: inherit;
+}
+/* SERVICES TABLE END */
+
+
+/* SERVICES MODAL START */
+.services-list {
+  list-style: none;
+  margin: 0px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 0px;
+  padding-right: 0px;
+  position: relative;
+}
+
+.services {
+  display: flex;
+  padding-top: 8px;
+  padding-right: 16px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.services-icon {
+  min-width: 56px;
+  color: rgba(0, 0, 0, 0.54);
+  flex-shrink: 0;
+  display: inline-flex;
+}
+
+.services-list a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.services-list a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+/* SERVICES MODAL END */
+
+/* NOTEPAD START */
+.delete-btn {
+  background-color: #DC3545;
+  color: white;
+  border: none;
+  width: auto;
+  height: 35px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+  font-family: 'Roboto';
+  padding-top: 5px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 1.75;
+  letter-spacing: 0.02857em;
+}
+
+
+/* NOTEPAD END */
